@@ -7,6 +7,7 @@ To write an NS2 program to observe the performance of the network with Carrier S
 PC System with Linux OS, NS2 software.
 
 # ALGORITHM
+```
 STEP 1: Start the program.
 STEP 2: Declare the global variables ns for creating a new simulator.
 STEP 3: Set the color for packets.
@@ -21,9 +22,9 @@ STEP 13: Set up the ftp over the TCP connection.
 STEP 14: Set the UDP and TCP connection for the source and destination. STEP 15: Create the traffic generator CBR for the source and destination files. STEP 16: Define the plot window and finish procedure.
 STEP 17: In the definition of the finish procedure declare the global variables. STEP 18: Close the trace file and namefile and execute the network animation file. STEP 19: At the particular time call the finish procedure.
 STEP 20: Stop the program.
- 
+ ```
 # PROGRAM
-
+```
 #Lan simulation – mac.tcl setns [new Simulator] #define color for data flows
 $ns color 1 blue
 $ns color 2 red
@@ -79,7 +80,7 @@ $nsat 7.0 "$ftp stop"
 $ns at 7.5 "$cbr stop"
 $ns at 8.0 "finish"
 $ns run
- 
+ ```
 # OUTPUT
 
 <img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/51d5b520-10ad-48dd-b7cb-78fba26e7735" />
